@@ -31,14 +31,12 @@ wget -O port-ovpn "https://raw.githubusercontent.com/angahpadu/angahshop786/main
 wget -O port-ssl "https://raw.githubusercontent.com/angahpadu/angahshop786/main/port-ssl.sh"
 wget -O port-wg "https://raw.githubusercontent.com/angahpadu/angahshop786/main/port-wg.sh"
 wget -O port-tr "https://raw.githubusercontent.com/angahpadu/angahshop786/main/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/angahpadu/angahshop786/main/port-sstp.sh"
 wget -O port-squid "https://raw.githubusercontent.com/angahpadu/angahshop786/main/port-squid.sh"
 wget -O port-ws "https://raw.githubusercontent.com/angahpadu/angahshop786/main/port-ws.sh"
 wget -O port-vless "https://raw.githubusercontent.com/angahpadu/angahshop786/main/port-vless.sh"
 wget -O webmin "https://raw.githubusercontent.com/angahpadu/angahshop786/main/webmin.sh"
 wget -O xp "https://raw.githubusercontent.com/angahpadu/angahshop786/main/xp.sh"
 wget -O speed-limiter "https://raw.githubusercontent.com/angahpadu/angahshop786/main/speed-limiter.sh"
-wget -O add-sstp "https://raw.githubusercontent.com/angahpadu/angahshop786/main/add-sstp.sh"
 wget -O add-ws "https://raw.githubusercontent.com/angahpadu/angahshop786/main/add-ws.sh"
 wget -O add-vless "https://raw.githubusercontent.com/angahpadu/angahshop786/main/add-vless.sh"
 wget -O add-tr "https://raw.githubusercontent.com/angahpadu/angahshop786/main/add-tr.sh"
@@ -48,7 +46,6 @@ chmod +x add-host
 chmod +x port-ovpn
 chmod +x port-ssl
 chmod +x port-wg
-chmod +x port-sstp
 chmod +x port-tr
 chmod +x port-squid
 chmod +x port-ws
