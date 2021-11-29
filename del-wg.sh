@@ -1,11 +1,4 @@
 #!/bin/bash
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
-MYIP=$(wget -qO- https://icanhazip.com);
-echo "Checking VPS"
- 
-clear
 source /etc/wireguard/params
 	NUMBER_OF_CLIENTS=$(grep -c -E "^### Client" "/etc/wireguard/$SERVER_WG_NIC.conf")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
@@ -45,10 +38,8 @@ source /etc/wireguard/params
 	systemctl restart "wg-quick@$SERVER_WG_NIC"
 	service cron restart
 clear
-echo " ======================================"
 echo " Wireguard Account Deleted Successfully"
-echo " ======================================"
+echo " =========================="
 echo " Client Name : $user"
 echo " Expired  On : $exp"
-echo " ======================================"
-echo ""
+echo " =========================="

@@ -1,9 +1,4 @@
 #!/bin/bash
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
-MYIP=$(wget -qO- https://icanhazip.com);
-echo "Checking VPS"
 echo > /etc/wireguard/clients.txt
 data=( `cat /etc/wireguard/wg0.conf | grep "### Client" | awk '{ print $3 }'`);
 hr(){
@@ -67,6 +62,5 @@ listClients(){
 }
 listClients
 echo "-------------------------------";
-echo -e "By ANGAH786"
-echo -e ""
+echo -e "Script By SAMVPN"
 

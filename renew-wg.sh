@@ -1,11 +1,4 @@
 #!/bin/bash
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
-MYIP=$(wget -qO- https://icanhazip.com);
-echo "Checking VPS"
-
-clear
 source /etc/wireguard/params
 	NUMBER_OF_CLIENTS=$(grep -c -E "^### Client" "/etc/wireguard/$SERVER_WG_NIC.conf")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
@@ -40,10 +33,9 @@ exp3=$(($exp2 + $masaaktif))
 exp4=`date -d "$exp3 days" +"%Y-%m-%d"`
 sed -i "s/### Client $user $exp/### Client $user $exp4/g" /etc/wireguard/wg0.conf
 clear
-echo " ==============================================="
+echo ""
 echo " Wireguard Account Has Been Successfully Renewed"
-echo " ==============================================="
+echo " =========================="
 echo " Client Name : $user"
 echo " Expired  On: $exp4"
-echo " ==============================================="
-echo ""
+echo " =========================="
