@@ -7,7 +7,18 @@ select yn in "Yes" "No"; do
     esac
 done
 clear
+RED='\e[1;31m'
+GREEN='\e[0;32m'
+BLUE='\e[0;34m'
+NC='\e[0m'
 
+#Input Domain
+clear
+echo ""
+echo -e "${BLUE}==========================================================${NC}"
+figlet Add Domain | lolcat
+echo -e "${BLUE}==========================================================${NC}"
+echo ""
 echo -e "Masukkan Domain"
 read -p "Hostname / Domain: " host
 rm -f /var/lib/crot-script/ipvps.conf
